@@ -35,9 +35,9 @@
 - [Support & Resources](#support--resources)
 
 ## Free SERP Scraper
-[무료 スクレイパー](https://github.com/luminati-io/serp-api/tree/main/free_serp_scraper)를 사용하면 소규모 Google SERP 데이터 수집이 가능합니다.
+[무료 スクレイパー](https://github.com/bright-kr/serp-api/tree/main/free_serp_scraper)를 사용하면 소규모 Google SERP 데이터 수집이 가능합니다.
 
-<img width="700" alt="google-search" src="https://github.com/luminati-io/serp-api/blob/main/Images/bright%20data%20products%20serp.png" />
+<img width="700" alt="google-search" src="https://github.com/bright-kr/serp-api/blob/main/Images/bright%20data%20products%20serp.png" />
 
 
 ### Input Parameters
@@ -57,7 +57,7 @@ with open("search_terms.txt", "r", encoding="utf-8") as file:
 ```
 
 ### Sample Output
-<img width="700" alt="google-serp-data" src="https://github.com/luminati-io/serp-api/blob/main/Images/samle%20output%20serp.png" />
+<img width="700" alt="google-serp-data" src="https://github.com/bright-kr/serp-api/blob/main/Images/samle%20output%20serp.png" />
 
 
 ## Limitations
@@ -90,7 +90,7 @@ Google은 여러 가지 스クレイピング 방지 조치를 구현합니다:
 1. **Prerequisites:**
     - [Bright Data 계정](https://brightdata.co.kr/)을 생성합니다
     - [API key](https://docs.brightdata.com/general/account/api-token)를 발급받습니다
-2. **Setting Up SERP API:** [단계별 가이드](https://github.com/luminati-io/SERP-API/blob/main/setup_serp_api.md)를 따라 Bright Data 계정에서 새 SERP API를 설정합니다.
+2. **Setting Up SERP API:** [단계별 가이드](https://github.com/bright-kr/SERP-API/blob/main/setup_serp_api.md)를 따라 Bright Data 계정에서 새 SERP API를 설정합니다.
 3. **Implementation Methods:**
     1. Direct API Access
     2. Native Proxy-Based Access
@@ -133,7 +133,7 @@ with open("serp_direct_api.json", "w") as file:
 print("Response saved to 'serp_direct_api.json'.")
 ```
 
-👉 [전체 JSON 출력](https://github.com/luminati-io/SERP-API/blob/main/serp_api_outputs/serp_direct_api.json)을 확인하십시오
+👉 [전체 JSON 출력](https://github.com/bright-kr/SERP-API/blob/main/serp_api_outputs/serp_direct_api.json)을 확인하십시오
 
 **Note**: 파싱된 JSON을 받으려면 `brd_json=1`을 사용하고, 파싱된 JSON + 전체 중첩 HTML을 받으려면 `brd_json=html`을 사용하십시오.
 
@@ -175,7 +175,7 @@ with open("serp_native_proxy.html", "w", encoding="utf-8") as file:
 print("Response saved to 'serp_native_proxy.html'.")
 ```
 
-👉 [전체 HTML 출력](https://github.com/luminati-io/SERP-API/blob/main/serp_api_outputs/serp_native_proxy.html)을 확인하십시오
+👉 [전체 HTML 출력](https://github.com/bright-kr/SERP-API/blob/main/serp_api_outputs/serp_native_proxy.html)을 확인하십시오
 
 **SSL Certificate**: 프로덕션에서는 Bright Data의 SSL 인증서를 로드하십시오. 자세히 알아보기: [SSL Certificate Guide](https://docs.brightdata.com/general/account/ssl-certificate)
 
@@ -570,6 +570,6 @@ multi:[
 ## Support & Resources
 - **Documentation:** [SERP API Docs](https://docs.brightdata.com/scraping-automation/serp-api/)
 - **Query Parameters Documentation:** [Detailed Query Parameters Docs](https://docs.brightdata.com/scraping-automation/serp-api/query-parameters)
-- **Other Guides:** [Web Unlocker API](https://github.com/luminati-io/web-unlocker-api), [Google Maps](https://github.com/luminati-io/Google-Maps-Scraper), [Google News](https://github.com/luminati-io/Google-News-Scraper)
+- **Other Guides:** [Web Unlocker API](https://github.com/bright-kr/web-unlocker-api), [Google Maps](https://github.com/bright-kr/Google-Maps-Scraper), [Google News](https://github.com/bright-kr/Google-News-Scraper)
 - **Interesting Read:** [Best SERP APIs](https://brightdata.co.kr/blog/web-data/best-serp-apis), [Build a RAG Chatbot with SERP API](https://brightdata.co.kr/blog/web-data/build-a-rag-chatbot), [Scrape Google Search with Python](https://brightdata.co.kr/blog/web-data/scraping-google-with-python)
 - **Technical Support:** [Contact Us](mailto:support@brightdata.com)
