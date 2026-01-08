@@ -1,10 +1,10 @@
 # SERP API
 
-[![Promo](https://media.brightdata.com/2025/08/SERP-API-50-off-GitHub-banner_1389_166.png)](https://brightdata.com/products/serp-api) 
+[![Promo](https://media.brightdata.com/2025/08/SERP-API-50-off-GitHub-banner_1389_166.png)](https://brightdata.co.kr/products/serp-api) 
 
-This repository provides two approaches for collecting Search Engine Results Page (SERP) data:
-1. A free, small-scale Google scraper suitable for basic data collection
-2. An enterprise-grade API solution for large-scale, real-time data collection from major search engines
+이 리포지토리는 검색 엔진 결과 페이지(SERP) 데이터를 수집하기 위한 두 가지 접근 방식을 제공합니다:
+1. 기본적인 데이터 수집에 적합한 무료 소규모 Google スクレイパー
+2. 주요 검색 엔진에서 대규모 실시간 데이터 수집을 위한 엔터프라이즈급 API 솔루션
 
 ## Table of Contents
 - [Free SERP Scraper](#free-serp-scraper)
@@ -35,17 +35,17 @@ This repository provides two approaches for collecting Search Engine Results Pag
 - [Support & Resources](#support--resources)
 
 ## Free SERP Scraper
-[The free scraper](https://github.com/luminati-io/serp-api/tree/main/free_serp_scraper) allows small-scale Google SERP data collection.
+[무료 スクレイパー](https://github.com/luminati-io/serp-api/tree/main/free_serp_scraper)를 사용하면 소규모 Google SERP 데이터 수집이 가능합니다.
 
 <img width="700" alt="google-search" src="https://github.com/luminati-io/serp-api/blob/main/Images/bright%20data%20products%20serp.png" />
 
 
 ### Input Parameters
-- **File:** Text file containing search terms (required)
-- **Format:** One search term per line
+- **File:** 검색어를 포함한 텍스트 파일(필수)
+- **Format:** 한 줄당 검색어 1개
 
 ### Implementation
-Modify these parameters in the Python file:
+Python 파일에서 다음 파라미터를 수정합니다:
 ```python
 # free_serp_scraper/google_serp.py
 HEADLESS = False
@@ -61,42 +61,42 @@ with open("search_terms.txt", "r", encoding="utf-8") as file:
 
 
 ## Limitations
-Google implements several anti-scraping measures:
+Google은 여러 가지 스クレイピング 방지 조치를 구현합니다:
 
-1. **CAPTCHAs**: Used to differentiate between humans and bots
-2. **IP Blocks**: Temporary or permanent bans for suspicious activity
-3. **Rate Limiting**: Quick detection and blocking of unidentified requests
-4. **Geotargeting**: Results vary by location, language, and device
-5. **Honeypot Traps**: Hidden elements to detect automated access
+1. **CAPTCHA**: 사람과 봇을 구분하기 위해 사용됩니다
+2. **IP 차단**: 의심스러운 활동에 대해 일시적 또는 영구적으로 차단합니다
+3. **レート制限**: 식별되지 않은 リクエスト를 신속히 탐지하고 차단합니다
+4. **ジオロケーション 타기팅**: 위치, 언어, 디바이스에 따라 결과가 달라집니다
+5. **허니팟 트랩**: 자동화된 접근을 탐지하기 위한 숨겨진 요소입니다
 
 ## Bright Data SERP API
-[Bright Data's SERP API](https://brightdata.com/products/serp-api) offers a robust solution for reliable SERP data collection.
+[Bright Data의 SERP API](https://brightdata.co.kr/products/serp-api)는 신뢰할 수 있는 SERP 데이터 수집을 위한 견고한 솔루션을 제공합니다.
 
 ### Key Features
 
-- Pay-per-successful-request model
-- Fast response times
-- Location-specific targeting
-- Support for multiple device types and search parameters
-- Coverage of major search engines (Google, Bing, DuckDuckGo, Yandex, Baidu, Yahoo, Naver)
-- Built-in anti-bot solutions
-- Real-time results with city-level accuracy
-- Structured data output (JSON/HTML)
+- 성공한 リクエスト당 과금 모델
+- 빠른 응답 시간
+- 위치 기반 타기팅
+- 다양한 디바이스 유형 및 검색 パラメータ 지원
+- 주요 검색 엔진 커버리지(Google, Bing, DuckDuckGo, Yandex, Baidu, Yahoo, Naver)
+- 내장 アンチボット 솔루션
+- 도시 단위 정확도를 갖춘 실시간 결과
+- 구조화된 데이터 출력(JSON/HTML)
 
-**Note:** The **SERP API** is part of [**Bright Data’s Web Scraping Suite**](https://docs.brightdata.com/scraping-automation/introduction) and includes full proxy management, unblocking, and parsing capabilities.
+**Note:** **SERP API**는 [**Bright Data’s Web Scraping Suite**](https://docs.brightdata.com/scraping-automation/introduction)의 일부이며, 완전한 プロキシ 관리, 언블로킹 및 파싱 기능을 포함합니다.
 
 ### Getting Started
 
 1. **Prerequisites:**
-    - Create a [Bright Data account](https://brightdata.com/)
-    - Obtain your [API key](https://docs.brightdata.com/general/account/api-token)
-2. **Setting Up SERP API:** Follow the [step-by-step guide](https://github.com/luminati-io/SERP-API/blob/main/setup_serp_api.md) to set up the new SERP API in your Bright Data account.
+    - [Bright Data 계정](https://brightdata.co.kr/)을 생성합니다
+    - [API key](https://docs.brightdata.com/general/account/api-token)를 발급받습니다
+2. **Setting Up SERP API:** [단계별 가이드](https://github.com/luminati-io/SERP-API/blob/main/setup_serp_api.md)를 따라 Bright Data 계정에서 새 SERP API를 설정합니다.
 3. **Implementation Methods:**
     1. Direct API Access
     2. Native Proxy-Based Access
 
 ### Direct API Access
-The simplest way to use the API is by making a direct request.
+API를 사용하는 가장 간단한 방법은 직접 リクエスト를 보내는 것입니다.
 
 **cURL Example**
 ```bash
@@ -133,14 +133,14 @@ with open("serp_direct_api.json", "w") as file:
 print("Response saved to 'serp_direct_api.json'.")
 ```
 
-👉 See the [full JSON output](https://github.com/luminati-io/SERP-API/blob/main/serp_api_outputs/serp_direct_api.json)
+👉 [전체 JSON 출력](https://github.com/luminati-io/SERP-API/blob/main/serp_api_outputs/serp_direct_api.json)을 확인하십시오
 
-**Note**: Use `brd_json=1` for parsed JSON or `brd_json=html` for parsed JSON + full nested HTML.
+**Note**: 파싱된 JSON을 받으려면 `brd_json=1`을 사용하고, 파싱된 JSON + 전체 중첩 HTML을 받으려면 `brd_json=html`을 사용하십시오.
 
-Learn more about parsing results: [SERP API Parsing Guide](https://docs.brightdata.com/scraping-automation/serp-api/parsing-search-results)
+파싱 결과에 대해 더 알아보기: [SERP API Parsing Guide](https://docs.brightdata.com/scraping-automation/serp-api/parsing-search-results)
 
 ### Native Proxy-Based Access
-An alternative method using proxy routing.
+プロキシ 라우팅을 사용하는 대체 방법입니다.
 
 **cURL Example**
 ```bash
@@ -175,24 +175,24 @@ with open("serp_native_proxy.html", "w", encoding="utf-8") as file:
 print("Response saved to 'serp_native_proxy.html'.")
 ```
 
-👉 See the [full HTML output](https://github.com/luminati-io/SERP-API/blob/main/serp_api_outputs/serp_native_proxy.html)
+👉 [전체 HTML 출력](https://github.com/luminati-io/SERP-API/blob/main/serp_api_outputs/serp_native_proxy.html)을 확인하십시오
 
-**SSL Certificate**: Load Bright Data’s SSL certificate for production. Learn more: [SSL Certificate Guide](https://docs.brightdata.com/general/account/ssl-certificate)
+**SSL Certificate**: 프로덕션에서는 Bright Data의 SSL 인증서를 로드하십시오. 자세히 알아보기: [SSL Certificate Guide](https://docs.brightdata.com/general/account/ssl-certificate)
 
 ## Query Parameters Overview
-Bright Data SERP API lets you tailor requests for multiple search engines—including Google, Bing, Yandex, and DuckDuckGo—using query parameters for localization, pagination, device emulation, and more. This overview provides a high-level look at the API’s capabilities.
+Bright Data SERP API를 사용하면 로컬라이제이션, 페이지네이션, 디바이스 에뮬레이션 등과 같은 쿼리 パラメータ를 통해 Google, Bing, Yandex, DuckDuckGo를 포함한 여러 검색 엔진에 대한 リクエスト를 커스터마이즈할 수 있습니다. 이 개요는 API 기능을 높은 수준에서 보여드립니다.
 
-> For a complete list and detailed explanation of all query parameters, please refer to the [Detailed Query Parameters Documentation](https://docs.brightdata.com/scraping-automation/serp-api/query-parameters).
+> 모든 쿼리 パラメータ의 전체 목록과 상세 설명은 [Detailed Query Parameters Documentation](https://docs.brightdata.com/scraping-automation/serp-api/query-parameters)을 참조하십시오.
 
 ### Google
-SERP API supports various Google services, including [**Search**](https://brightdata.com/products/serp-api/google-search), [**Maps**](https://brightdata.com/products/serp-api/google-search/maps), [**Trends**](https://brightdata.com/products/serp-api/google-search/trends), [**Reviews**](https://brightdata.com/products/serp-api/google-search/reviews), **Lens**, [**Hotels**](https://brightdata.com/products/serp-api/google-search/hotels), and [**Flights**](https://brightdata.com/products/web-scraper/google-flights). Below are key configuration parameters for each service:
+SERP API는 [**Search**](https://brightdata.co.kr/products/serp-api/google-search), [**Maps**](https://brightdata.co.kr/products/serp-api/google-search/maps), [**Trends**](https://brightdata.co.kr/products/serp-api/google-search/trends), [**Reviews**](https://brightdata.co.kr/products/serp-api/google-search/reviews), **Lens**, [**Hotels**](https://brightdata.co.kr/products/serp-api/google-search/hotels), [**Flights**](https://brightdata.co.kr/products/web-scraper/google-flights) 등 다양한 Google 서비스를 지원합니다. 아래는 각 서비스별 주요 구성 パラメータ입니다:
 
 #### 1. Google Search
-Customize your search results with options for localization, search type, pagination, geolocation, and device targeting.
+로컬라이제이션, 검색 유형, 페이지네이션, ジオロケーション, 디바이스 타기팅 옵션으로 검색 결과를 커스터마이즈합니다.
 
 **Localization**
-- `gl`: Country code for the search location (e.g., `gl=us`).
-- `hl`: Language code for the results (e.g., `hl=en`).
+- `gl`: 검색 위치의 국가 코드(예: `gl=us`).
+- `hl`: 결과의 언어 코드(예: `hl=en`).
 
 ```bash
 curl \
@@ -202,12 +202,12 @@ curl \
 ```
 
 **Search Type:**
-Use the **`tbm`** parameter to specify the search type:
+검색 유형을 지정하려면 **`tbm`** パラメータ를 사용하십시오:
 
-- Images: `tbm=isch`
-- Shopping: `tbm=shop`
-- News: `tbm=nws`
-- Videos: `tbm=vid`
+- Images: `tbm=isch`
+- Shopping: `tbm=shop`
+- News: `tbm=nws`
+- Videos: `tbm=vid`
 
 ```bash
 curl \
@@ -217,8 +217,8 @@ curl \
 ```
 
 **Pagination:**
-- `start`: Result offset (0 for the first page, 20 for the second, etc.).
-- `num`: Number of results per page (default is 20).
+- `start`: 결과 오프셋(첫 페이지는 0, 두 번째는 20 등).
+- `num`: 페이지당 결과 수(기본값 20).
 
 ```bash
 curl \
@@ -228,7 +228,7 @@ curl \
 ```
 
 **Geolocation:**
-- `uule`: Encoded location string for geo-specific results
+- `uule`: 지리적으로 특정된 결과를 위한 인코딩된 위치 문자열
 
 ```bash
 curl \
@@ -238,11 +238,11 @@ curl \
 ```
 
 **Device Targeting:**
-Use the **`brd_mobile`** parameter:
+**`brd_mobile`** パラメータ를 사용하십시오:
 
-- `0`: Desktop (default)
-- `1`: Random mobile
-- Specific values: `ios` (or `iphone`), `ipad`, `android`, `android_tablet`
+- `0`: 데스크톱(기본값)
+- `1`: 랜덤 모바일
+- 특정 값: `ios`(또는 `iphone`), `ipad`, `android`, `android_tablet`
 
 ```bash
 curl \
@@ -252,10 +252,10 @@ curl \
 ```
 
 #### 2. Google Maps
-Customize maps queries by specifying coordinates and filtering by accommodation type.
+좌표를 지정하고 숙소 유형으로 필터링하여 지도 쿼리를 커스터마이즈합니다.
 
 **Coordinates:**
-- Format: `@latitude,longitude,zoom` (e.g., zoom from `3z` to `21z`).
+- 형식: `@latitude,longitude,zoom`(예: zoom은 `3z`부터 `21z`까지).
 
 ```bash
 curl \
@@ -267,7 +267,7 @@ curl \
 **Accommodation Search:**
 
 - `brd_accomodation_type`:
-    - `hotels` (default)
+    - `hotels`(기본값)
     - `vacation_rentals`
 
 ```bash
@@ -278,16 +278,16 @@ curl \
 ```
 
 #### 3. Google Trends
-Retrieve trend data with customizable time ranges and widget options.
+커스터마이즈 가능한 기간 및 위젯 옵션으로 트렌드 데이터를 조회합니다.
 
 **Required Parameters:**
 
-- `brd_json=1`: Return parsed JSON results.
-- `brd_trends`: Specify widgets (e.g., `timeseries,geo_map`).
+- `brd_json=1`: 파싱된 JSON 결과를 반환합니다.
+- `brd_trends`: 위젯을 지정합니다(예: `timeseries,geo_map`).
 
 **Time Range:**
 
-- `date`: Defines the time range (e.g., `now 1-d` for the past day).
+- `date`: 기간을 정의합니다(예: 지난 하루는 `now 1-d`).
 
 ```bash
 curl \
@@ -297,12 +297,12 @@ curl \
 ```
 
 #### 4. Google Reviews
-Fetch reviews using a feature ID and sort them as needed.
+기능 ID를 사용해 리뷰를 가져오고 필요에 따라 정렬합니다.
 
 **Key Parameters:**
 
-- `fid`: Feature ID from search results.
-- `sort`: Sorting order (e.g., `newestFirst`, `ratingHigh`).
+- `fid`: 검색 결과에서 가져온 Feature ID입니다.
+- `sort`: 정렬 순서(예: `newestFirst`, `ratingHigh`).
 
 ```bash
 curl \
@@ -312,12 +312,12 @@ curl \
 ```
 
 #### 5. Google Lens
-Search by image using a URL or file upload.
+URL 또는 파일 업로드로 이미지를 기반으로 검색합니다.
 
 **Image Search:**
 
-- `url`: The image URL to search.
-- `brd_json=1`: Return results as JSON.
+- `url`: 검색할 이미지 URL입니다.
+- `brd_json=1`: 결과를 JSON으로 반환합니다.
 
 ```bash
 curl \
@@ -327,12 +327,12 @@ curl \
 ```
 
 #### 6. Google Hotels
-Customize hotel searches with booking dates and currency options.
+예약 날짜 및 통화 옵션으로 호텔 검색을 커스터마이즈합니다.
 
 **Booking Parameters:**
 
-- `brd_dates`: Check-in and check-out dates (`YYYY-MM-DD,YYYY-MM-DD`).
-- `brd_currency`: Currency code (e.g., `USD`, `EUR`).
+- `brd_dates`: 체크인 및 체크아웃 날짜(`YYYY-MM-DD,YYYY-MM-DD`).
+- `brd_currency`: 통화 코드(예: `USD`, `EUR`).
 
 ```bash
 curl \
@@ -342,7 +342,7 @@ curl \
 ```
 
 #### 7. Google Flights
-Search for flights using similar localization parameters.
+유사한 로컬라이제이션 パラメータ로 항공편을 검색합니다.
 
 ```bash
 curl \
@@ -353,11 +353,11 @@ curl \
 
 
 ### Bing
-Configure Bing queries with options for localization, geo-targeting, pagination, device and browser targeting, and output formats. Check out the [dedicated Bing API](https://brightdata.com/products/serp-api/bing-search).
+로컬라이제이션, 지리 타기팅, 페이지네이션, 디바이스 및 브라우저 타기팅, 출력 형식 옵션으로 Bing 쿼리를 구성합니다. [전용 Bing API](https://brightdata.co.kr/products/serp-api/bing-search)도 확인하십시오.
 
 **Localization**
 
-- `setLang`: Language for the interface (e.g., `setLang=en-US`).
+- `setLang`: 인터페이스 언어(예: `setLang=en-US`).
 
 ```bash
 curl \
@@ -368,9 +368,9 @@ curl \
 
 **Geo-Location**
 
-- `location`: Search origin (e.g., `location=New+York`).
-- `cc`: Country code (e.g., `cc=us`).
-- `mkt`: Market code (e.g., `mkt=en-US`).
+- `location`: 검색 출발지(예: `location=New+York`).
+- `cc`: 국가 코드(예: `cc=us`).
+- `mkt`: 마켓 코드(예: `mkt=en-US`).
 
 
 ```bash
@@ -382,8 +382,8 @@ curl \
 
 **Pagination**
 
-- `count`: Number of results (e.g., `count=50`).
-- `first`: Offset for pagination (e.g., `first=11` for the second page).
+- `count`: 결과 수(예: `count=50`).
+- `first`: 페이지네이션 오프셋(예: 두 번째 페이지는 `first=11`).
 
 
 ```bash
@@ -395,7 +395,7 @@ curl \
 
 **Filters**
 
-- `safesearch`: Adult content filter (e.g., `safesearch=off`).
+- `safesearch`: 성인 콘텐츠 필터(예: `safesearch=off`).
 
 ```bash
 curl \
@@ -406,7 +406,7 @@ curl \
 
 **Device Targeting**
 
-- `brd_mobile`: Specifies the device type (e.g., `brd_mobile=1` for mobile, or `brd_mobile=ios`).
+- `brd_mobile`: 디바이스 유형을 지정합니다(예: 모바일은 `brd_mobile=1` 또는 `brd_mobile=ios`).
 
 ```bash
 curl \
@@ -417,7 +417,7 @@ curl \
 
 **Browser Targeting**
 
-- `brd_browser`: Specifies the browser (e.g., `brd_browser=chrome`).
+- `brd_browser`: 브라우저를 지정합니다(예: `brd_browser=chrome`).
 
 ```bash
 curl \
@@ -428,7 +428,7 @@ curl \
 
 **Parsing**
 
-- `brd_json`: Returns parsed JSON (e.g., `brd_json=1`).
+- `brd_json`: 파싱된 JSON을 반환합니다(예: `brd_json=1`).
 
 ```bash
 curl \
@@ -438,11 +438,11 @@ curl \
 ```
 
 ### Yandex
-Briefly configure Yandex queries with parameters for localization, pagination, time range, and device/browser targeting. Check out the [dedicated Yandex API](https://brightdata.com/products/serp-api/yandex-search).
+로컬라이제이션, 페이지네이션, 기간, 디바이스/브라우저 타기팅을 위한 パラメータ로 Yandex 쿼리를 간단히 구성합니다. [전용 Yandex API](https://brightdata.co.kr/products/serp-api/yandex-search)도 확인하십시오.
 
 **Localization**
-- `lr`: Specifies the region (e.g., `lr=84` for the USA).
-- `lang`: Page language (e.g., `lang=en`).
+- `lr`: 지역을 지정합니다(예: 미국은 `lr=84`).
+- `lang`: 페이지 언어(예: `lang=en`).
 
 ```bash
 curl \
@@ -452,7 +452,7 @@ curl \
 ```
 
 **Pagination**
-- `p`: Result page number (e.g., `p=2` for the second page).
+- `p`: 결과 페이지 번호(예: 두 번째 페이지는 `p=2`).
 
 ```bash
 curl \
@@ -462,7 +462,7 @@ curl \
 ```
 
 **Time Range**
-- `within`: Specifies the time range (e.g., `within=1`).
+- `within`: 기간을 지정합니다(예: `within=1`).
 
 ```bash
 curl \
@@ -488,12 +488,12 @@ curl \
 ```
 
 ### DuckDuckGo
-A quick overview of DuckDuckGo search customization using localization, safe search, time range, and device/browser targeting. Check out the [dedicated DuckDuckGo API](https://brightdata.com/products/serp-api/duckduckgo-search).
+로컬라이제이션, 안전 검색, 기간, 디바이스/브라우저 타기팅을 사용한 DuckDuckGo 검색 커스터마이즈에 대한 간단한 개요입니다. [전용 DuckDuckGo API](https://brightdata.co.kr/products/serp-api/duckduckgo-search)도 확인하십시오.
 
 **Localization**
 
-- `kl`: Country and language (e.g., `kl=us-en`).
-- `kad`: Defines the language for interface elements.
+- `kl`: 국가 및 언어(예: `kl=us-en`).
+- `kad`: 인터페이스 요소의 언어를 정의합니다.
 
 ```bash
 curl \
@@ -504,7 +504,7 @@ curl \
 
 **Safe Search**
 
-- `kp`: Enables safe search (e.g., `kp=1`).
+- `kp`: 안전 검색을 활성화합니다(예: `kp=1`).
 
 ```bash
 curl \
@@ -515,7 +515,7 @@ curl \
 
 **Time Range**
 
-- `df`: Specifies the time range (e.g., `df=d`).
+- `df`: 기간을 지정합니다(예: `df=d`).
 
 ```bash
 curl \
@@ -526,7 +526,7 @@ curl \
 
 **Device Targeting**
 
-- `brd_mobile`: For mobile device emulation.
+- `brd_mobile`: 모바일 디바이스 에뮬레이션에 사용합니다.
 
 ```bash
 curl \
@@ -537,7 +537,7 @@ curl \
 
 **Browser Targeting**
 
-- `brd_browser`: For specifying a browser (e.g., `chrome`).
+- `brd_browser`: 브라우저를 지정합니다(예: `chrome`).
 
 ```bash
 curl \
@@ -549,14 +549,14 @@ curl \
 ## Other Settings for SERP API
 
 ### Asynchronous Requests
-- Sync (default): Get a real-time response immediately.
-- Async: Retrieve results later (ideal for high-volume requests).
+- Sync(기본값): 실시간 응답을 즉시 받습니다.
+- Async: 나중에 결과를 조회합니다(대량 リクエ스트에 이상적입니다).
 
-Learn more: [How Async Works](https://docs.brightdata.com/scraping-automation/serp-api/asynchronous-requests#how-it-works)
+자세히 알아보기: [How Async Works](https://docs.brightdata.com/scraping-automation/serp-api/asynchronous-requests#how-it-works)
 
 
 ### Multi-Query Requests
-Send **parallel queries** in one API call, sharing the same IP and session using the `multi` parameter.
+`multi` パラメータ를 사용하여 하나의 API 호출에서 **병렬 쿼리**를 전송하고, 동일한 IPアドレス와 セッション을 공유합니다.
 
 ```python
 multi:[
@@ -564,12 +564,12 @@ multi:[
   {"keyword":"shoes","num":200}
 ]
 ```
-Learn more: [Multiple Queries Guide](https://docs.brightdata.com/scraping-automation/serp-api/asynchronous-requests#multiple-queries-in-a-single-request)
+자세히 알아보기: [Multiple Queries Guide](https://docs.brightdata.com/scraping-automation/serp-api/asynchronous-requests#multiple-queries-in-a-single-request)
 
 
 ## Support & Resources
 - **Documentation:** [SERP API Docs](https://docs.brightdata.com/scraping-automation/serp-api/)
 - **Query Parameters Documentation:** [Detailed Query Parameters Docs](https://docs.brightdata.com/scraping-automation/serp-api/query-parameters)
 - **Other Guides:** [Web Unlocker API](https://github.com/luminati-io/web-unlocker-api), [Google Maps](https://github.com/luminati-io/Google-Maps-Scraper), [Google News](https://github.com/luminati-io/Google-News-Scraper)
-- **Interesting Read:** [Best SERP APIs](https://brightdata.com/blog/web-data/best-serp-apis), [Build a RAG Chatbot with SERP API](https://brightdata.com/blog/web-data/build-a-rag-chatbot), [Scrape Google Search with Python](https://brightdata.com/blog/web-data/scraping-google-with-python)
+- **Interesting Read:** [Best SERP APIs](https://brightdata.co.kr/blog/web-data/best-serp-apis), [Build a RAG Chatbot with SERP API](https://brightdata.co.kr/blog/web-data/build-a-rag-chatbot), [Scrape Google Search with Python](https://brightdata.co.kr/blog/web-data/scraping-google-with-python)
 - **Technical Support:** [Contact Us](mailto:support@brightdata.com)
