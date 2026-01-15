@@ -65,8 +65,8 @@ Google은 여러 가지 스クレイピング 방지 조치를 구현합니다:
 
 1. **CAPTCHA**: 사람과 봇을 구분하기 위해 사용됩니다
 2. **IP 차단**: 의심스러운 활동에 대해 일시적 또는 영구적으로 차단합니다
-3. **レート制限**: 식별되지 않은 リクエスト를 신속히 탐지하고 차단합니다
-4. **ジオロケーション 타기팅**: 위치, 언어, 디바이스에 따라 결과가 달라집니다
+3. **속도 제한**: 식별되지 않은 요청를 신속히 탐지하고 차단합니다
+4. **지오로케이션 타기팅**: 위치, 언어, 디바이스에 따라 결과가 달라집니다
 5. **허니팟 트랩**: 자동화된 접근을 탐지하기 위한 숨겨진 요소입니다
 
 ## Bright Data SERP API
@@ -74,16 +74,16 @@ Google은 여러 가지 스クレイピング 방지 조치를 구현합니다:
 
 ### Key Features
 
-- 성공한 リクエスト당 과금 모델
+- 성공한 요청당 과금 모델
 - 빠른 응답 시간
 - 위치 기반 타기팅
-- 다양한 디바이스 유형 및 검색 パラメータ 지원
+- 다양한 디바이스 유형 및 검색 매개변수 지원
 - 주요 검색 엔진 커버리지(Google, Bing, DuckDuckGo, Yandex, Baidu, Yahoo, Naver)
-- 내장 アンチボット 솔루션
+- 내장 안티봇 솔루션
 - 도시 단위 정확도를 갖춘 실시간 결과
 - 구조화된 데이터 출력(JSON/HTML)
 
-**Note:** **SERP API**는 [**Bright Data’s Web Scraping Suite**](https://docs.brightdata.com/scraping-automation/introduction)의 일부이며, 완전한 プロキシ 관리, 언블로킹 및 파싱 기능을 포함합니다.
+**Note:** **SERP API**는 [**Bright Data’s Web Scraping Suite**](https://docs.brightdata.com/scraping-automation/introduction)의 일부이며, 완전한 프록시 관리, 언블로킹 및 파싱 기능을 포함합니다.
 
 ### Getting Started
 
@@ -96,7 +96,7 @@ Google은 여러 가지 스クレイピング 방지 조치를 구현합니다:
     2. Native Proxy-Based Access
 
 ### Direct API Access
-API를 사용하는 가장 간단한 방법은 직접 リクエスト를 보내는 것입니다.
+API를 사용하는 가장 간단한 방법은 직접 요청를 보내는 것입니다.
 
 **cURL Example**
 ```bash
@@ -140,7 +140,7 @@ print("Response saved to 'serp_direct_api.json'.")
 파싱 결과에 대해 더 알아보기: [SERP API Parsing Guide](https://docs.brightdata.com/scraping-automation/serp-api/parsing-search-results)
 
 ### Native Proxy-Based Access
-プロキシ 라우팅을 사용하는 대체 방법입니다.
+프록시 라우팅을 사용하는 대체 방법입니다.
 
 **cURL Example**
 ```bash
@@ -180,15 +180,15 @@ print("Response saved to 'serp_native_proxy.html'.")
 **SSL Certificate**: 프로덕션에서는 Bright Data의 SSL 인증서를 로드하십시오. 자세히 알아보기: [SSL Certificate Guide](https://docs.brightdata.com/general/account/ssl-certificate)
 
 ## Query Parameters Overview
-Bright Data SERP API를 사용하면 로컬라이제이션, 페이지네이션, 디바이스 에뮬레이션 등과 같은 쿼리 パラメータ를 통해 Google, Bing, Yandex, DuckDuckGo를 포함한 여러 검색 엔진에 대한 リクエスト를 커스터마이즈할 수 있습니다. 이 개요는 API 기능을 높은 수준에서 보여드립니다.
+Bright Data SERP API를 사용하면 로컬라이제이션, 페이지네이션, 디바이스 에뮬레이션 등과 같은 쿼리 매개변수를 통해 Google, Bing, Yandex, DuckDuckGo를 포함한 여러 검색 엔진에 대한 요청를 커스터마이즈할 수 있습니다. 이 개요는 API 기능을 높은 수준에서 보여드립니다.
 
-> 모든 쿼리 パラメータ의 전체 목록과 상세 설명은 [Detailed Query Parameters Documentation](https://docs.brightdata.com/scraping-automation/serp-api/query-parameters)을 참조하십시오.
+> 모든 쿼리 매개변수의 전체 목록과 상세 설명은 [Detailed Query Parameters Documentation](https://docs.brightdata.com/scraping-automation/serp-api/query-parameters)을 참조하십시오.
 
 ### Google
-SERP API는 [**Search**](https://brightdata.co.kr/products/serp-api/google-search), [**Maps**](https://brightdata.co.kr/products/serp-api/google-search/maps), [**Trends**](https://brightdata.co.kr/products/serp-api/google-search/trends), [**Reviews**](https://brightdata.co.kr/products/serp-api/google-search/reviews), **Lens**, [**Hotels**](https://brightdata.co.kr/products/serp-api/google-search/hotels), [**Flights**](https://brightdata.co.kr/products/web-scraper/google-flights) 등 다양한 Google 서비스를 지원합니다. 아래는 각 서비스별 주요 구성 パラメータ입니다:
+SERP API는 [**Search**](https://brightdata.co.kr/products/serp-api/google-search), [**Maps**](https://brightdata.co.kr/products/serp-api/google-search/maps), [**Trends**](https://brightdata.co.kr/products/serp-api/google-search/trends), [**Reviews**](https://brightdata.co.kr/products/serp-api/google-search/reviews), **Lens**, [**Hotels**](https://brightdata.co.kr/products/serp-api/google-search/hotels), [**Flights**](https://brightdata.co.kr/products/web-scraper/google-flights) 등 다양한 Google 서비스를 지원합니다. 아래는 각 서비스별 주요 구성 매개변수입니다:
 
 #### 1. Google Search
-로컬라이제이션, 검색 유형, 페이지네이션, ジオロケーション, 디바이스 타기팅 옵션으로 검색 결과를 커스터마이즈합니다.
+로컬라이제이션, 검색 유형, 페이지네이션, 지오로케이션, 디바이스 타기팅 옵션으로 검색 결과를 커스터마이즈합니다.
 
 **Localization**
 - `gl`: 검색 위치의 국가 코드(예: `gl=us`).
@@ -202,7 +202,7 @@ curl \
 ```
 
 **Search Type:**
-검색 유형을 지정하려면 **`tbm`** パラメータ를 사용하십시오:
+검색 유형을 지정하려면 **`tbm`** 매개변수를 사용하십시오:
 
 - Images: `tbm=isch`
 - Shopping: `tbm=shop`
@@ -238,7 +238,7 @@ curl \
 ```
 
 **Device Targeting:**
-**`brd_mobile`** パラメータ를 사용하십시오:
+**`brd_mobile`** 매개변수를 사용하십시오:
 
 - `0`: 데스크톱(기본값)
 - `1`: 랜덤 모바일
@@ -342,7 +342,7 @@ curl \
 ```
 
 #### 7. Google Flights
-유사한 로컬라이제이션 パラメータ로 항공편을 검색합니다.
+유사한 로컬라이제이션 매개변수로 항공편을 검색합니다.
 
 ```bash
 curl \
@@ -438,7 +438,7 @@ curl \
 ```
 
 ### Yandex
-로컬라이제이션, 페이지네이션, 기간, 디바이스/브라우저 타기팅을 위한 パラメータ로 Yandex 쿼리를 간단히 구성합니다. [전용 Yandex API](https://brightdata.co.kr/products/serp-api/yandex-search)도 확인하십시오.
+로컬라이제이션, 페이지네이션, 기간, 디바이스/브라우저 타기팅을 위한 매개변수로 Yandex 쿼리를 간단히 구성합니다. [전용 Yandex API](https://brightdata.co.kr/products/serp-api/yandex-search)도 확인하십시오.
 
 **Localization**
 - `lr`: 지역을 지정합니다(예: 미국은 `lr=84`).
@@ -556,7 +556,7 @@ curl \
 
 
 ### Multi-Query Requests
-`multi` パラメータ를 사용하여 하나의 API 호출에서 **병렬 쿼리**를 전송하고, 동일한 IPアドレス와 セッション을 공유합니다.
+`multi` 매개변수를 사용하여 하나의 API 호출에서 **병렬 쿼리**를 전송하고, 동일한 IP 주소와 세션을 공유합니다.
 
 ```python
 multi:[
